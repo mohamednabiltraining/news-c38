@@ -1,4 +1,4 @@
-package com.route.api.model.sourcesResponse
+package com.data.api.model.sourcesResponse
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

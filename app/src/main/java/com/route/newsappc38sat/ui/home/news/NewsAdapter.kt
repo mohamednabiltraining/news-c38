@@ -3,7 +3,7 @@ package com.route.newsappc38sat.ui.home.news
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.route.api.model.newsResponse.News
+import com.data.api.model.newsResponse.News
 import com.route.newsappc38sat.databinding.ItemNewsBinding
 
 class NewsAdapter(var newsList: List<News?>? = null) :

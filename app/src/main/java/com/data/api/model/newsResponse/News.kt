@@ -1,8 +1,8 @@
-package com.route.api.model.newsResponse
+package com.data.api.model.newsResponse
 
 import android.os.Parcelable
+import com.data.api.model.sourcesResponse.Source
 import com.google.gson.annotations.SerializedName
-import com.route.api.model.sourcesResponse.Source
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

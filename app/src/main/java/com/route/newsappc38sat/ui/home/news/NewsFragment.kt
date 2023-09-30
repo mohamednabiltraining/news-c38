@@ -6,12 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.data.api.model.sourcesResponse.Source
 import com.google.android.material.tabs.TabLayout
-import com.route.api.model.sourcesResponse.Source
 import com.route.newsappc38sat.databinding.FragmentNewsBinding
 import com.route.newsappc38sat.ui.ViewError
 import com.route.newsappc38sat.ui.showMessage
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class NewsFragment : Fragment() {
     lateinit var viewBinding: FragmentNewsBinding
     lateinit var viewModel: NewsViewModel
@@ -53,7 +56,10 @@ class NewsFragment : Fragment() {
         }
     }
 
-    val adapter = NewsAdapter()
+
+    @Inject
+    lateinit var adapter: NewsAdapter
+
     private fun initViews() {
         viewBinding.vm = viewModel
         viewBinding.lifecycleOwner = this

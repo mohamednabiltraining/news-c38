@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.route.newsappc38sat.R
 import com.route.newsappc38sat.databinding.ActivityHomeBinding
 import com.route.newsappc38sat.ui.home.news.NewsFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     lateinit var viewBinding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
